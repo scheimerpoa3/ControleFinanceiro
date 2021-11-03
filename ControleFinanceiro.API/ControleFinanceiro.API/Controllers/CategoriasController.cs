@@ -25,7 +25,6 @@ namespace ControleFinanceiro.API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Categoria>>> GetCategorias()
         {
-            REST
             return await _context.Categorias.Include(c => c.Tipo).ToListAsync();
         }
 
