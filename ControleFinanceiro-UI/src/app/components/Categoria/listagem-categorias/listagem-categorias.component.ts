@@ -22,7 +22,7 @@ export class ListagemCategoriasComponent implements OnInit {
   }
 
   ExibirColunas(): string[]{
-    return ['nome', 'icone', 'tipo','ações']
+    return ['nome', 'icone', 'tipo','acoes']
   }
 
 }
