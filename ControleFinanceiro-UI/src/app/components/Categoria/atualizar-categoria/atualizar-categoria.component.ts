@@ -11,7 +11,7 @@ import { TiposService } from 'src/app/services/tipos.service';
 @Component({
   selector: 'app-atualizar-categoria',
   templateUrl: './atualizar-categoria.component.html',
-  styleUrls: ['./listagem-categorias.component.css']
+  styleUrls: ['../listagem-categorias/listagem-categorias.component.css']
 })
 export class AtualizarCategoriaComponent implements OnInit {
 
@@ -46,6 +46,6 @@ export class AtualizarCategoriaComponent implements OnInit {
     return this.formulario.controls;
   }
   voltarListagem(): void{
-    this.router.navigate(['categorias/listagemcategorias']);
+    this.router.navigate(['categorias/listagemCategorias']);
   }
 }
