@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TiposService } from '../app/services/tipos.service';
 import { CategoriasService } from '../app/services/Categorias.service';
-import { ListagemCategoriasComponent } from './components/Categoria/listagem-categorias/listagem-categorias.component';
+import { ListagemCategoriasComponent, DialogExclusaoCategoriasComponent } from './components/Categoria/listagem-categorias/listagem-categorias.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
@@ -19,6 +19,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatSelectModule } from '@angular/material/select';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatDialogModule } from '@angular/material/dialog';
 import { AtualizarCategoriaComponent } from './components/Categoria/atualizar-categoria/atualizar-categoria.component';
 
 @NgModule({
@@ -26,7 +27,8 @@ import { AtualizarCategoriaComponent } from './components/Categoria/atualizar-ca
     AppComponent,
     ListagemCategoriasComponent,
     NovaCategoriaComponent,
-    AtualizarCategoriaComponent
+    AtualizarCategoriaComponent,
+    DialogExclusaoCategoriasComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +37,7 @@ import { AtualizarCategoriaComponent } from './components/Categoria/atualizar-ca
     HttpClientModule,
     MatTableModule,
     MatIconModule,
+    MatDialogModule,
     MatButtonModule,
     ReactiveFormsModule,
     MatCardModule,
